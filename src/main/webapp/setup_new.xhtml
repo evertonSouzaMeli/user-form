@@ -18,18 +18,19 @@
 						<label for="name">Name</label>
 						<p:inputText id="name" type="text" value="#{setupBean.setup.name}" />
 					</div>
-					<div class="p-field">
-						<label for="description">Description</label>
-						<p:inputTextarea id="description"
-							value="#{setupBean.setup.description}" />
+						<div class="p-field">
+						<label for="birthDate">Birth Date</label>
+						<p:inputText id="birthDate" type="text" value="#{setupBean.setup.birthDate}" />
 					</div>
-					<div class="p-field">
-						<label for="price">Price</label>
-						<p:inputNumber id="price" symbol="R$ " decimalSeparator=","
-							thousandSeparator="." value="#{setupBean.setup.price}" />
+						<div class="p-field">
+						<label for="email">Email</label>
+						<p:inputText id="email" type="text" value="#{setupBean.setup.email}" />
 					</div>
-				</div>
-
+						<div class="p-field">
+						<label for="password">Password</label>
+						<p:inputText id="password" type="text" value="#{setupBean.setup.password}" />
+					</div>
+					</div>
 				<f:facet name="footer">
 					<p:commandButton icon="pi pi-check" value="Save"
 						action="#{setupBean.save()}" />
