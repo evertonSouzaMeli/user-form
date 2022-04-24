@@ -21,30 +21,30 @@
 						<label for="name">Name</label>
 						<p:inputText id="name" styleClass="p-col-12 p-md-2"
 							style="margin: 0.5em 0px" type="text"
-							value="#{setupBean.setup.name}" />
+							value="#{userBean.user.name}" />
 					</div>
 					<div class="p-field p-grid">
 						<label for="birthDate">Birth Date</label>
 						<p:inputMask id="date" style="margin: 0.5em 0px"
-							value="#{setupBean.setup.birthDate}" mask="99/99/9999" />
+							value="#{userBean.user.birthDate}" mask="99/99/9999" />
 					</div>
 					<div class="p-field p-grid">
 						<label for="email">Email</label>
 						<p:inputText id="email" styleClass="p-col-12 p-md-2"
 							style="margin: 0.5em 0px" type="text"
-							value="#{setupBean.setup.email}" />
+							value="#{userBean.user.email}" />
 					</div>
 					<div class="p-field p-grid">
 						<label for="password">Password</label>
 						<p:password id="password" styleClass="p-col-12 p-md-2"
 							style="margin: 0.5em 0px" type="text"
-							value="#{setupBean.setup.password}" />
+							value="#{userBean.user.password}" />
 					</div>
 				</div>
 				<f:facet name="footer" class="ui-card-footer">
 					<p:commandButton icon="pi pi-check" value="Register"
 						styleClass="ui-button-raised ui-button-success"
-						action="#{setupBean.save()}" />
+						action="#{userBean.save()}" />
 				</f:facet>
 			</p:card>
 		</h:form>
@@ -52,7 +52,7 @@
 		<h:form>
 			<div class="card"
 				style="margin: 2em 0px; width: 75%; margin: 3em 12em">
-				<p:dataTable var="user" value="#{setupBean.list}">
+				<p:dataTable var="user" value="#{userBean.list}">
 					<p:column headerText="Id">
 						<h:outputText value="#{user.id}" />
 					</p:column>

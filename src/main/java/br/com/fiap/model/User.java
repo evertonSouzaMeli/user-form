@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Setup {
+public class User {
 
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,6 +15,7 @@ public class Setup {
 	private String birthDate;
 	private String email;
 	private String password;
+	
 	public Long getId() {
 		return id;
 	}
@@ -47,7 +48,7 @@ public class Setup {
 	}
 	@Override
 	public String toString() {
-		return "Setup [id=" + id + ", name=" + name + ", birthDate=" + birthDate + ", email=" + email + ", password="
+		return "User [id=" + id + ", name=" + name + ", birthDate=" + birthDate + ", email=" + email + ", password="
 				+ password + "]";
 	}
 }
